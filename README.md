@@ -75,9 +75,7 @@ https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-
 ### Option (b) :Continous Monitoring - Prometheus/Grafana
 
 
-To export Falco events into Prometheus, we will need Falco Exporter.
-
-Please install Falco Exporter as a helm chart as below –
+To export Falco events into Prometheus, we will need Falco Exporter. Please install Falco Exporter as a helm chart as below. Below steps are also available in [EKS Workshop]([https://pages.github.com/](https://www.eksworkshop.com/intermediate/240_monitoring/))  –
 
 ```
 helm install falco-exporter falcosecurity/falco-exporter
@@ -228,4 +226,5 @@ You can also create sample sub panels to the dashboard, for example I have added
 just a sample dashboard (you can create any varierty of dashboards)
 
 ![devsecops-arch](images/sample-dash.png)
+
 
