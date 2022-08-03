@@ -24,7 +24,7 @@ Garafana
 ### DevSecOps Pipeline Execution Workflow in Depth 
 
 
-### The Pipeline has three (3) AWS CodeBuild Phases -
+**The Pipeline has three (3) AWS CodeBuild Phases -**
 
 1. Code Build phase for IaC security best practises security checks using checkov
 2. Code Build phase for performing the static scans using -
@@ -70,7 +70,7 @@ helm install falco-exporter falcosecurity/falco-exporter
 
 Next step is to create a separate namespace for Prometheus as below -
 
-````
+```
 kubectl create namespace prometheus
 ```
 
