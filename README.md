@@ -51,9 +51,10 @@ below is the screenshot of the sample pipeline -
 
 ### Monitoring Options
 
-**Continous Monitoring can be done via : **
+**Continous Monitoring can be done via**
 
 (a) Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
+
 (b) Or, Using Open source tools like Promethous/Grafana
 
 
