@@ -250,6 +250,7 @@ const codebuildCheckov = new aws_codebuild.PipelineProject(this, "cdkdeploycheck
           install: {
             commands: [
                 'env',
+                // OPTIONAL - Below steps are to escape Github Rate limits. You can push to a private repository like Amazon ECR any image and pull/push infinitely      
                 'export TAG=${CODEBUILD_RESOLVED_SOURCE_VERSION}',
                 'export dockerhub_username=`aws secretsmanager get-secret-value --secret-id dockerhub| jq --raw-output ".SecretString" | jq -r .username`',
                 'export dockerhub_password=`aws secretsmanager get-secret-value --secret-id  dockerhubtwo| jq --raw-output ".SecretString" | jq -r .password`',
@@ -270,7 +271,7 @@ const codebuildCheckov = new aws_codebuild.PipelineProject(this, "cdkdeploycheck
               'ECR_LOGIN=$(aws ecr get-login --region $AWS_DEFAULT_REGION --no-include-email)',
               'echo "############Logging in to Amazon ECR############"',
               '$ECR_LOGIN',
-              // OPTIONAL - Below steps are to escape Github Rate limits. You can push to a private repository like Amazon ECR            
+              // OPTIONAL - Below steps are to escape Github Rate limits. You can push to a private repository like Amazon ECR any image and pull/push infinitely            
              //  'docker run --rm -i -v ${PWD}/.hadolint.yaml:/.hadolint.yaml hadolint/hadolint:v1.16.2 hadolint -f json - < ./Dockerfile',
               'docker pull $ECR_REPOSITORY_URI:$HADOLINT_IMAGE_TAG',
               'cd $CODEBUILD_SRC_DIR/build',
