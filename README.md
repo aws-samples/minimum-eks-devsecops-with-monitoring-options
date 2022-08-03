@@ -17,10 +17,6 @@ Garafana
 ![devsecops-arch](images/eks-devsecops.png)
 
 
-## Log Flow 
-![log-flow](images/sample-logs-flow.png)
-
-
 ### DevSecOps Pipeline Execution Workflow in Depth 
 
 
@@ -53,10 +49,15 @@ below is the screenshot of the sample pipeline -
 ![devsecops-arch](images/codepipeline.png)
 
 
-## Continous Monitoring can be done via - 
+### Monitoring Options
 
-Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
-Or, Using Open source tools like Promethous/Grafana
+**Continous Monitoring can be done via - **
+
+(a) Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
+(b) Or, Using Open source tools like Promethous/Grafana
+
+
+![log-flow](images/sample-logs-flow.png)
 
 
 ### Continous Monitoring - CNCF Falco/Amazon CLoudWatch (OPTIONAL)
