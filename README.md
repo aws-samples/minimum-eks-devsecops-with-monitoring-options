@@ -21,10 +21,10 @@ Garafana
 ![log-flow](images/sample-logs-flow.png)
 
 
-DevSecOps Pipeline Execution Workflow in Depth 
+### DevSecOps Pipeline Execution Workflow in Depth 
 
 
-## The Pipeline has three (3) AWS CodeBuild Phases -
+### The Pipeline has three (3) AWS CodeBuild Phases -
 
 1. Code Build phase for IaC security best practises security checks using checkov
 2. Code Build phase for performing the static scans using -
@@ -33,7 +33,7 @@ DevSecOps Pipeline Execution Workflow in Depth
 3. Dynamic/Runtime security checks using CNCF Falco
 
 
-# Step by Step Instructions to Setup Pipeline
+### Setup Instructions
 
 Please follow below step-by-step instructions to setup the pipeline from scratch and clone the below Github repository as below –
 
@@ -41,7 +41,7 @@ Please follow below step-by-step instructions to setup the pipeline from scratch
 git clone https://github.com/aws-samples/sample-eks-devsecops-with-monitoring
 ```
 
-## Build the Pipeline
+### Build the Pipeline
 
 ```
 npm run build
@@ -53,12 +53,12 @@ below is the screenshot of the sample pipeline _
 ![devsecops-arch](images/eks-devsecops.png)
 
 
-# Continous Monitoring - CNCF Falco
+### Continous Monitoring - CNCF Falco
 Please follow below blog to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
 
 https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-eks-using-cncf-falco/
 
-# Continous Monitoring - Prometheus/Grafana
+### Continous Monitoring - Prometheus/Grafana
 
 To export Falco events into Prometheus, we will need Falco Exporter.
 
@@ -116,7 +116,7 @@ Below is the Prometheus dashboard which will list all the data it has collected 
 ![devsecops-arch](images/prometheus-dash.png)
 
 
-## Setup Grafana for Continuous Observability
+### Setup Grafana for Continuous Observability
 
 Create a separate namespace for Grafana for easier operations -
 
@@ -173,7 +173,7 @@ If you do ```echo http://$ELB``` you will see the ELB endpoint
 ![devsecops-arch](images/overall.png)
 
 
-## Accessing Grafana 
+### Accessing Grafana 
 
 
 Now you can open the Grafana dashboard using the ELB url from above export - 
@@ -193,7 +193,7 @@ You can notice the Prometheus data source has been added already to Grafana -
 ![devsecops-arch](images/grafana-welcome-ds.png)
 
 
-## Import Metrics 
+### Import Metrics 
 
 Now go to Imports page and import the Falco dashboard using the unique URL 
 
