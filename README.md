@@ -1,4 +1,4 @@
-# Sample DevSecOps with Monitoring on Amazon EKS
+# Minimum DevSecOps with Monitoring on Amazon EKS
 
 Many organizations are or are considering migrating their applications and/or software to containers over traditional virtual machines given that they are incredibly fast, easy to maintain, have simpler deployment life-cycles, and are much easier to spin up and down. This can greatly reduce the cost and increase efficiency. For a secure container life cycle management, container image hardening and end-to-end security checks are a most important and critical factor. Containers need to be secured by default before the containers are used or deployed.
 
