@@ -19,6 +19,15 @@ Garafana
 Amazon CloudWatch
 
 
+## Monitoring Options
+
+**Continous Monitoring can be done via**
+
+(a) Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
+
+(b) Or, Using Open source tools like Promethous/Grafana
+
+
 ## Target Architecture
 
 ![devsecops-arch](images/eks-devsecops.png)
@@ -56,13 +65,7 @@ below is the screenshot of the sample pipeline -
 ![devsecops-arch](images/codepipeline.png)
 
 
-## Monitoring Options
 
-**Continous Monitoring can be done via**
-
-(a) Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
-
-(b) Or, Using Open source tools like Promethous/Grafana
 
 
 
