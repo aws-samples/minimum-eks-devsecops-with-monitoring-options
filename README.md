@@ -1,4 +1,4 @@
-# Minimum DevSecOps with Monitoring on Amazon EKS
+# Minimum DevSecOps with Monitoring Options on Amazon EKS
 
 Many organizations are or are considering migrating their applications and/or software to containers over traditional virtual machines given that they are incredibly fast, easy to maintain, have simpler deployment life-cycles, and are much easier to spin up and down. This can greatly reduce the cost and increase efficiency. For a secure container life cycle management, container image hardening and end-to-end security checks are a most important and critical factor. Containers need to be secured by default before the containers are used or deployed.
 
@@ -49,7 +49,7 @@ below is the screenshot of the sample pipeline -
 ![devsecops-arch](images/codepipeline.png)
 
 
-### Monitoring Options
+## Monitoring Options
 
 **Continous Monitoring can be done via**
 
@@ -58,10 +58,11 @@ below is the screenshot of the sample pipeline -
 (b) Or, Using Open source tools like Promethous/Grafana
 
 
+
 ![log-flow](images/sample-logs-flow.png)
 
 
-### Continous Monitoring - CNCF Falco/Amazon CLoudWatch (OPTIONAL)
+### Option (a) : Continous Monitoring - CNCF Falco/Amazon CLoudWatch
 Please follow below blog to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
 
 https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-eks-using-cncf-falco/
@@ -71,7 +72,7 @@ https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-
 
 **fluent-bit** directory contains files to create a ConfigMap for Fluent Bit configuration, a Fluent Bit DaemonSet to run on all worker nodes, and finally a service account for the RBAC cluster role for authorization. All the files will be applied all at once.
 
-### Continous Monitoring - Prometheus/Grafana
+### Option (b) :Continous Monitoring - Prometheus/Grafana
 
 To export Falco events into Prometheus, we will need Falco Exporter.
 
