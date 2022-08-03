@@ -1,4 +1,4 @@
-# Welcome to your CDK TypeScript project
+# Sample DevSecOps with Monitoring on Amazon EKS
 
 This is a blank project for CDK development with TypeScript.
 
