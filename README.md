@@ -53,10 +53,15 @@ below is the screenshot of the sample pipeline -
 ![devsecops-arch](images/codepipeline.png)
 
 
-### Continous Monitoring - CNCF Falco
+### Continous Monitoring - CNCF Falco/Amazon CLoudWatch (OPTIONAL)
 Please follow below blog to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
 
 https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-eks-using-cncf-falco/
+
+
+**NOTE-** 
+
+**fluent-bit** directory contains files to create a ConfigMap for Fluent Bit configuration, a Fluent Bit DaemonSet to run on all worker nodes, and finally a service account for the RBAC cluster role for authorization. All the files will be applied all at once.
 
 ### Continous Monitoring - Prometheus/Grafana
 
