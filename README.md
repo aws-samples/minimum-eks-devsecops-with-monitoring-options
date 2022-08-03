@@ -63,7 +63,7 @@ below is the screenshot of the sample pipeline -
 
 
 ### Option (a) : Continous Monitoring - CNCF Falco/Amazon CLoudWatch
-Please follow below blog to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
+Please follow my blog below to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
 
 https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-eks-using-cncf-falco/
 
@@ -73,6 +73,7 @@ https://aws.amazon.com/blogs/containers/implementing-runtime-security-in-amazon-
 **fluent-bit** directory contains files to create a ConfigMap for Fluent Bit configuration, a Fluent Bit DaemonSet to run on all worker nodes, and finally a service account for the RBAC cluster role for authorization. All the files will be applied all at once.
 
 ### Option (b) :Continous Monitoring - Prometheus/Grafana
+
 
 To export Falco events into Prometheus, we will need Falco Exporter.
 
