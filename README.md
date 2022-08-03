@@ -10,6 +10,7 @@ Anchore Engine
 CNCF Falco Family (Falco, Sidekick & Sidekick-UI)
 Prometheus
 Garafana
+Amazon CloudWatch
 
 
 ## Target Architecture
