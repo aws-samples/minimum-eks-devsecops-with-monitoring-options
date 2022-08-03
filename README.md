@@ -53,6 +53,12 @@ below is the screenshot of the sample pipeline -
 ![devsecops-arch](images/codepipeline.png)
 
 
+## Continous Monitoring can be done via - 
+
+Amazon CloudWatch, CNCF Falco, Falco-UI, Falco Sidekick
+Or, Using Open source tools like Promethous/Grafana
+
+
 ### Continous Monitoring - CNCF Falco/Amazon CLoudWatch (OPTIONAL)
 Please follow below blog to understand and implement runtime security using CNCF Falco, Falco-UI, Falco Sidekick. 
 
