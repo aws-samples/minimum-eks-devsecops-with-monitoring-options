@@ -30,7 +30,7 @@ Amazon CloudWatch
 ![log-flow](images/sample-logs-flow.png)
 
 
-## Target Architecture
+## Sample Target Architecture
 
 ![devsecops-arch](images/eks-devsecops.png)
 
@@ -38,7 +38,7 @@ Amazon CloudWatch
 ### DevSecOps Pipeline Execution Workflow in Depth 
 
 
-**The Pipeline has three (3) AWS CodeBuild Phases -**
+The Pipeline has three (3) AWS CodeBuild Phases -
 
 1. Code Build phase for IaC security best practises security checks using checkov
 2. Code Build phase for performing the static scans using -
@@ -52,7 +52,7 @@ Amazon CloudWatch
 Please follow below step-by-step instructions to setup the pipeline from scratch and clone the below Github repository as below –
 
 ```
-git clone https://github.com/aws-samples/sample-eks-devsecops-with-monitoring
+git clone https://github.com/aws-samples/minimum-eks-devsecops-with-monitoring-options
 ```
 
 ### Build the Pipeline
