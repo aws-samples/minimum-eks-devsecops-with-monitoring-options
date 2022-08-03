@@ -27,6 +27,8 @@ Amazon CloudWatch
 
 (b) Or, Using Open source tools like Promethous/Grafana
 
+![log-flow](images/sample-logs-flow.png)
+
 
 ## Target Architecture
 
@@ -64,12 +66,6 @@ below is the screenshot of the sample pipeline -
 
 ![devsecops-arch](images/codepipeline.png)
 
-
-
-
-
-
-![log-flow](images/sample-logs-flow.png)
 
 
 ### Option (a) : Continous Monitoring - CNCF Falco/Amazon CLoudWatch
