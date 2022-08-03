@@ -5,11 +5,17 @@ Many organizations are or are considering migrating their applications and/or so
 This sample code base will demonstrate how to build an end to end DevSecOps pipeline on Amazon EKS using IaC code scanning static scanning and dynamic (runtime) scanning using native AWS services as well as 3rd party services and COntinous monitoring and alerting with Prometheus and Grafana. The products/services used are -
 
 Hadolint/ShellCheck
+
 Checkov
+
 Anchore Engine
+
 CNCF Falco Family (Falco, Sidekick & Sidekick-UI)
+
 Prometheus
+
 Garafana
+
 Amazon CloudWatch
 
 
