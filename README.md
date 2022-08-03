@@ -48,9 +48,9 @@ npm run build
 cdk synth
 cdk deploy
 ```
-below is the screenshot of the sample pipeline _
+below is the screenshot of the sample pipeline -
 
-![devsecops-arch](images/eks-devsecops.png)
+![devsecops-arch](images/codepipeline.png)
 
 
 ### Continous Monitoring - CNCF Falco
