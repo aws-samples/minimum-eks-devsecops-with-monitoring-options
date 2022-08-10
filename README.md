@@ -58,6 +58,7 @@ git clone https://github.com/aws-samples/minimum-eks-devsecops-with-monitoring-o
 ### Build the Pipeline
 
 ```
+npm i aws-cdk-lib
 npm run build
 cdk synth
 cdk deploy
