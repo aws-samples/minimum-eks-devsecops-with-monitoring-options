@@ -19,7 +19,7 @@ Garafana
 Amazon CloudWatch
 
 
-## Monitoring Options
+## Monitoring Options (out of many)
 
 **Continous Monitoring can be done via**
 
